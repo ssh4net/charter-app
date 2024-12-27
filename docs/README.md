@@ -1,6 +1,4 @@
-# Charter
-
-## Introduction
+# Charter - Introduction
 
 ![Charter](https://ssh4net.github.io/charter-app/images/charter_main_gui.png)
 
