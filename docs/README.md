@@ -2,7 +2,7 @@
 
 - [Introduction](#Charter---Introduction)
 - [User Guide](https://ssh4net.github.io/charter-app/guide/user_guide.md)
-- [Development Goals](#Development-Goals)
+- [Development Goals](###Development-Goals)
 
 # Charter - Introduction
 
