@@ -1,4 +1,4 @@
-- [User Guide](https://ssh4net.github.io/charter-app/guide/user_guide.md)
+- [User Guide](https://ssh4net.github.io/charter-app/guide/user_guide)
 - [Introduction](#charter---introduction)
   - [Key Features](#key-features)
   - [Existing Solutions](#existing-solutions)
