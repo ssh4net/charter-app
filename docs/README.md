@@ -1,8 +1,8 @@
 # Charter - TOC:
 
-- [Introduction](#Charter---Introduction)
+- [Introduction](#charter---Introduction)
 - [User Guide](https://ssh4net.github.io/charter-app/guide/user_guide.md)
-- [Development Goals](###Development-Goals)
+- [Development Goals](#development-goals)
 
 # Charter - Introduction
 
