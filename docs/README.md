@@ -27,7 +27,7 @@ Modern color mathematics for correction or characterization is straightforward u
 
 Attempts to find a simple GUI for color value extraction proved unsuccessful due to:
 - Prohibitive costs and lack of trial versions.
-- Limitations in handling non-standard charts, like a flexible 988-patch chart in CGATK format.
+- Limitations in handling non-standard charts.
 - Incompatibility with charts exhibiting both perspective and non-linear distortions.
 
 #### Addressing Practical Challenges
