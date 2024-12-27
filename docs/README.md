@@ -4,4 +4,4 @@ Charter App Documentation
 # Text
 Some text
 
-![Charter](/charter-app/images/Charter_main_gui.png)
+![Charter](/charter-app/docs/images/Charter_main_gui.png)
