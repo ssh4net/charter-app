@@ -5,4 +5,4 @@ Charter App Documentation
 
 Charter is an application main goal that in sampling raw color values from images with color charts.
 
-![Charter](/charter-app/docs/images/charter_main_gui.png)
+![Charter](https://ssh4net.github.io/charter-app/images/charter_main_gui.png)
