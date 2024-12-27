@@ -1,5 +1,3 @@
-# Charter - TOC:
-
 - [User Guide](https://ssh4net.github.io/charter-app/guide/user_guide.md)
 - [Introduction](#charter---introduction)
   - [Key Features](#key-features)
