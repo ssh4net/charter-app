@@ -1,4 +1,4 @@
-# Charter App
+# Charter
 
 ## Introduction
 
