@@ -50,9 +50,9 @@ Initially designed as a companion to Colour-Science, the Charter application emp
 
 - White balance calculation.
 - Color Correction Matrix computation.
-- Decoding gamma encoded images (sRGB, Log).
+- Decoding gamma encoded images (gamma, sRGB, Log).
 - Black level subtraction.
-- Exporting results for further processing in NumPy (Python) or GLSL (GPU shader code).
+- Exporting results formatted for in NumPy, Matlab, GLSL, CSV, etc.
 - Bake color transformations to 3D LUT.
 - Compile color transformations into Common LUT format (more flexible and editable).
 - etc.
