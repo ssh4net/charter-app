@@ -14,19 +14,20 @@ The Charter application's primary purpose is to sample raw color values from ima
 #### Key Features
 
 - **Dynamic Chart Widget**: Users can interactively position the widget over the color chart in the image. The widget supports:
-  - Perspective transformation (using red corner patches).
+  - Perspective transformation (using corner patches).
   - **Independent** or **elastic** movements for individuals or groups of swatches.
+  - Lens distortion (experimental).
 - **Customizable Sampling**: Control sampling radius and averaging methods (mean or mean + median).
 - **Multi-Image Sampling**: Sampling colors from multiple images as single color chart values.
 - **Data Export**: Export swatches color values, coordinates, and results to other applications or libraries like Colour-Science or SciPy.
 - **Demozaic** raw monochromatic images.
 - **Decoding** sRGB, Gamma, Log encoded images on load.
 - **3D Lut**: bake computed white balance (WB) and color transformation matrix (CCM) into 3D LUT (.cube)
-- **Common LUT format**: export computed white balance (WB) and color transformation matrix (CCM) into .clf LUT file
+- **Common LUT format**: export computed white balance (WB) and color transformation matrix (CCM) into *.clf LUT file.
 
 #### Existing Solutions
 
-Applications for color charts and color mathematics generally fall into these categories:
+Applications for color charts generally fall into these categories:
 
 - **Conditionally free tools**: Simplified, one-click solutions for creating Adobe DCP or ICC profiles (e.g., Adobe DNG Profile Editor, x-Rite ColorChecker Camera Calibration).
 - **Paid applications**: More flexible but often limited to specific outputs like DCP/ICC profiles or 3D LUTs (e.g., Lumariver Profile Designer, 3D LUT Creator Pro).
@@ -41,18 +42,20 @@ Attempts to find a simple GUI for color value extraction proved unsuccessful due
 - High costs and lack of trial versions.
 - Limitations in handling non-standard charts.
 - Incompatibility with charts exhibiting both perspective and non-linear distortions.
+- Required perfect capturing setup
 
-The glossy material of certain charts, like the xRite Digital SG, adds sensitivity to lighting, making glare-free captures impossible in setups like Light Stage systems. Multi-angle shooting and value averaging are necessary for accurate results. Multi-camera rigs may only partially capture the chart, complicating the workflow further.
+Using the glossy material of certain charts, like the xRite Digital SG, adds sensitivity to lighting, making glare-free captures impossible in setups like Light Stage systems. Multi-angle shooting and value averaging are necessary for accurate results. When some color charts are captured in Multi-camera rigs, they may only be partially visible, complicating the workflow further.
 
 #### Development Goals
 
-Initially designed as a companion to Colour-Science, the Charter application employs double-precision measurements. Mathematical operations were cross-verified with Colour-Science during development. Over time, core functionality was integrated directly into the application, including:
+Initially designed as a companion to Colour-Science, the Charter application employs double-precision measurements. Mathematical operations were cross-verified with Colour-Science results during development. Over time, core functionality was integrated directly into the application, including:
 
 - White balance calculation.
 - Color Correction Matrix computation.
-- Decoding gamma encoded images (gamma, sRGB, Log).
+- Decoding gamma-encoded images (gamma, sRGB, Log).
+- Demozaic.
 - Black level subtraction.
 - Exporting results formatted for in NumPy, Matlab, GLSL, CSV, etc.
-- Bake color transformations to 3D LUT.
+- Bake color transformations to 3D LUT (*.cube)
 - Compile color transformations into Common LUT format (more flexible and editable).
 - etc.
