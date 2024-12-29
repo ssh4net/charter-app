@@ -9,7 +9,13 @@
   - [Gamma decode](#linear--srgb--gamma--log)
   - [Gamma/Black Lv/Exposure](#import-gamma--exposure--black-lv)
 - [Load Image](#load-image)
-  - 
+  - [Add New Tab +](#add-new-tab-)
+  - [Post Process](#output-image-settings-post-process)
+- [Load Chart](#load-chart)
+  - [Reset Chart x](#x)
+  - [Flip/Rotate](#rotate-h--v--cw--ccw)
+  - [Moving/Radius](#moving-radius)
+  - [Fisheye distortion](#fisheye)
 
 # Charter GUI
 
@@ -114,7 +120,7 @@ Inside the **Charter** app folder, you can find the CGATK subfolder with two col
 
 **WARNING!! At this moment, only LAB or XYZ under D50 white measurements are supported. Spectral measurement support will be added soon (and faster if there is a demand for that).**
 
-## x
+## [x]
 
 Reset the color chart coordinates to the initial state.
 
