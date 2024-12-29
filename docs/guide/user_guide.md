@@ -16,6 +16,17 @@
   - [Flip/Rotate](#rotate-h--v--cw--ccw)
   - [Moving/Radius](#moving-radius)
   - [Fisheye distortion](#fisheye)
+  - [Perspective Corners](#corners)
+  - [Corners size](#zoom-patches)
+- [Sampling Settings](#sampling-control)
+  - [Windows size](#radius)
+  - [Method](#median--mean)
+- [Multi Sampling](#multi-sampling)
+  - [Method](#min--avg--median)
+- [Estimate White Ballance](#estimate-wb)
+- [Estimate CCM](#estimate-ccm)
+- [DeltaE](#delta-e)
+- [Copy/Paste WB&CCM](#copy-ccm--paste-ccm)
 
 # Charter GUI
 
@@ -136,7 +147,7 @@ Elastic dragging control. Set to half of the longest color chart side by default
 Allow dragging of the group of color swatches of the color chart widget.
 It can be helpful to fine-tune chart widget swatches position in case of nonlinear deformation of the chart on the captured image.
 
-## Fisheye
+### Fisheye
 
 Theoretically, it should allow pre-distort color chart swatches using a lens distortion model.
 **WARNING!! At this moment, this is a test implementation, and using this slider will reset all individual swatches to global perspective transformations**
