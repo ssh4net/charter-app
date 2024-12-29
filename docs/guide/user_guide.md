@@ -1,5 +1,7 @@
 [Home](https://ssh4net.github.io/charter-app/)
-
+[Charter GUI](#charter-gui)
+- [Image control](#image-control)
+  - [View Layers](#source---decoded---corrected---post)
 
 
 # Charter GUI
