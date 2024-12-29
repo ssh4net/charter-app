@@ -15,9 +15,9 @@
 
 ## Main Image preview and Chart widget
 
-Main are to work with image and color chart.
+The Main area is to work with images and color charts using chart widgets.
 When the image is loaded, it is possible to view:
-- **Raw/Source image** - rendered on-screen without sRGB gamma (sRGB EOTF).
+- **Raw/Source image** - rendered on-screen without sRGB gamma.
 - **Decoded image** - rendered as **decoded linear values** without sRGB gamma.
 - **Corrected image** - rendered as a **corrected image** with sRGB gamma applied.
 - **Post-processed image** - rendered as a **corrected image with post-processing (exposure, gamma, black level subtraction) and sRGB gamma** applied.
@@ -60,18 +60,21 @@ For Log gamma encoded images, use **Log** and change the menu to the desired log
 Import image decoding control in order to apply to a raw image value.
 
 - **Gamma** - Decoding gamma control. If importing image have used **gamma 1.8** switch import settings to **Gamma** and change **Gamma** value to **1.8**
-  ***pow(Source_Value, gamma)*** (forward gamma)
+  
+  `pow(Source_Value, gamma)` (forward gamma)
 
 - **Black Lv** - Subtracting a **black level** from a linear image. In the case of sRGB, Gamma or Log input is subtracted after decoding.
   Black level values are easier to use in a **sensor bit depth**. For example, for **12-bit** sensors that can be around **10-20**, for **14-bit** sensors **1024-2048**, etc.
-  ***Decoded_Value - black_lv***
+  
+  `Decoded_Value - black_lv`
 
 - **Exposure** - apply exposure compensation (shift) to source values.
   For example, when working with MV camera images, and the sensor has **12 bit** DAC, captured raw image can have values in the range **0-4095**.
   These values are stored in **16 bit**, and to work with such data, the raw range must be scaled to map the raw range to 0% - 100% of a **16bit**.
   For that, you need to use **4-bit** shift or **+4EV Exposure** in the Charter app.
   Working with DSLR or mirrorless RAW data (not the camera raw) that can have 14-bit, you need to use **2-bit shift** or **+2EV Exposure**.
-  ***Decoded_Value * pow(2, exposure)*** or ***Decoded_Value << exposure*** (in case of using integer values)
+  
+  `Decoded_Value * pow(2, exposure)`
 
 ## Load Image
 
@@ -88,7 +91,8 @@ After adding a New Tab, you can load another image to work with.
 - **Exposure** - exposure compensation for corrected image. If there is no correction yet, post-process settings are applied to source values.
 - **Black Lv** - Black level subtraction
 - **Gamma** - Gamma correction (backward gamma). The control is similar to image editing gamma correction control.
-  ***pow(Value, 1/gamma)***
+  
+  `pow(Value, 1/gamma)`
 
 # Chart Control
 
