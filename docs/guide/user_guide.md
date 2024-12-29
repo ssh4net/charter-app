@@ -218,4 +218,15 @@ It should show a window with a per-swatch Delta-E 2000 "heat map."
 A test feature that can copy WB and CCM from one tab to another and apply them to the image.
 
 **WARNING!! Not well tested.**
+
+## Result
+
+![Result](https://ssh4net.github.io/charter-app/images/charter_results.png)
+
+### White Ballance
+
+Show estimated per-channel scale. 
+Depend on used **CCM Estimation settings** show:
+- **Normalized** - the sum of channel intensities is not changed, or the sum of scales equals 3.0.
+- **Scaled** - estimated scales adjusted to the smallest intensity equal 1.0
   
