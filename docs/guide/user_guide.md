@@ -1,8 +1,15 @@
 [Home](https://ssh4net.github.io/charter-app/)
+
 [Charter GUI](#charter-gui)
 - [Image control](#image-control)
-  - [View Layers](#source---decoded---corrected---post)
-
+  - [View Layers](#source--decoded--corrected--post)
+  - [Zoom](#2x--11--05x)
+  - [Image Info](#source-image-information)
+- [Import Settings](#import-image-settings)
+  - [Gamma decode](#linear--srgb--gamma--log)
+  - [Gamma/Black Lv/Exposure](#import-gamma--exposure--black-lv)
+- [Load Image](#load-image)
+  - 
 
 # Charter GUI
 
@@ -83,7 +90,7 @@ Import image decoding control in order to apply to a raw image value.
 Standard **Open File** dialogue to open any supported OpenImageIO file formats. 
 If this is a grayscale image, Charter will automatically try to demosaic this image, and the result will be loaded as RGB.
 
-## +
+## [+]
 
 Add **New Tab**.
 After adding a New Tab, you can load another image to work with.
