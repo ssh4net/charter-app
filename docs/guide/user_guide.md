@@ -31,7 +31,6 @@
 - [Copy/Paste WB&CCM](#copy-ccm--paste-ccm)
 
 [Results](https://ssh4net.github.io/charter-app/guide/user_guide_results#results)
-
 [Range Mapping](https://ssh4net.github.io/charter-app/guide/user_guide_results#range-mapping)
 
 ## Charter GUI
