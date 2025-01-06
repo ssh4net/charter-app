@@ -1,6 +1,6 @@
 # Charter
 
-[Workflow](https://ssh4net.github.io/charter-app/guide/workflow)
+- [Workflow](https://ssh4net.github.io/charter-app/guide/workflow)
 
 [Charter GUI](#charter-gui)
 - [Image control](#image-control)
