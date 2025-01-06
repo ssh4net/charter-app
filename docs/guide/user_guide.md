@@ -34,7 +34,7 @@
 
 [Settings](https://ssh4net.github.io/charter-app/guide/user_guide_settings#settings)
 
-## Charter GUI
+# Charter GUI
 
 ![GUI](https://ssh4net.github.io/charter-app/images/charter_gui.png)
 
@@ -113,7 +113,7 @@ Import image decoding control in order to apply to a raw image value.
 Standard **Open File** dialogue to open any supported OpenImageIO file formats. 
 If this is a grayscale image, Charter will automatically try to demosaic this image, and the result will be loaded as RGB.
 
-## Add new Tab [+]
+## Add New Tab [+]
 
 Add **New Tab**.
 After adding a New Tab, you can load another image to work with.
