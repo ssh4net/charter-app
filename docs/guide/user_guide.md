@@ -32,6 +32,8 @@
 
 [Results](https://ssh4net.github.io/charter-app/guide/user_guide_results/#results)
 
+[Range Mapping](https://ssh4net.github.io/charter-app/guide/user_guide_range_mapping#range-mapping)
+
 ## Charter GUI
 
 ![GUI](https://ssh4net.github.io/charter-app/images/charter_gui.png)
