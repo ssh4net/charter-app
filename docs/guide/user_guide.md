@@ -1,5 +1,3 @@
-[Home](https://ssh4net.github.io/charter-app/)
-
 # Charter
 
 [Charter GUI](#charter-gui)
