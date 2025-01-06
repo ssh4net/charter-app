@@ -17,6 +17,14 @@
 Loading Charter project to the current Tab.
 
 Saving Charter project from the current Tab.
+**Results:**
+- White Ballance
+- Color Correction Matrix
+- Delta-E CIE2000
+- Delta-E Heat map
+**Chart:
+- Path to used chart CGATK file 
+- Chart and chart swatches placement
 
 ### Export LUT
 
