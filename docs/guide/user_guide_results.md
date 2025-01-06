@@ -1,7 +1,7 @@
 - [Home](https://ssh4net.github.io/charter-app/)
 - [Charter GUI](https://ssh4net.github.io/charter-app/user_gude#charter-gui)
 
-# Results
+[Results](#results)
 
 - [White Ballance](#white-ballance)
 - [RAW to XYZ D50](#raw-to-xyz-d50)
@@ -11,6 +11,10 @@
 - [RAW to sRGB](#raw-to-srgb)
 - [Print Samples](#print-samples)
 - [Save CSV](#save-csv)
+
+[Range Mapping](#range-mapping)
+
+## Results
 
 ![Result](https://ssh4net.github.io/charter-app/images/charter_results.png)
 
@@ -76,6 +80,6 @@ Output CSV file with:
 - **CCM** - estimated CCM matrix.
 - **Coordinates** - coordinates of placed patches on image (optional).
 
-# Range Mapping
+## Range Mapping
 
 
