@@ -1,5 +1,5 @@
-- [Home](https://ssh4net.github.io/charter-app/)
 - [Charter GUI](https://ssh4net.github.io/charter-app/guide/user_guide#charter-gui)
+- [Charter Settings](https://ssh4net.github.io/charter-app/guide/user_guide_settings)
 
 [Results](#results)
 
