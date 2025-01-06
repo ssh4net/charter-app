@@ -1,5 +1,7 @@
 # Charter
 
+[Workflow](https://ssh4net.github.io/charter-app/guide/workflow)
+
 [Charter GUI](#charter-gui)
 - [Image control](#image-control)
   - [View Layers](#source--decoded--corrected--post)
