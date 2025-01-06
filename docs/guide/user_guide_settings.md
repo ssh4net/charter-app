@@ -22,8 +22,7 @@
   - [Copy Format](#copy-format)
   - [Save CSV Options](#save-csv-options)
 - [Window](#window)
-  - 
-- [Settings](#settings)
+- [System](#system)
 
 # Charter Menu and Settings
 
