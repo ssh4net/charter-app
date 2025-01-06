@@ -75,3 +75,7 @@ Output CSV file with:
 - **Linear RGB** - sampled source colors in linear RGB color space.
 - **CCM** - estimated CCM matrix.
 - **Coordinates** - coordinates of placed patches on image (optional).
+
+# Range Mapping
+
+
