@@ -28,7 +28,7 @@
 - [DeltaE](#delta-e)
 - [Copy/Paste WB&CCM](#copy-ccm--paste-ccm)
 
-[Results](https://ssh4net.github.io/charter-app/guide/user_guide_results)
+[Results](https://ssh4net.github.io/charter-app/guide/user_guide_results/#results)
 
 # Charter GUI
 
