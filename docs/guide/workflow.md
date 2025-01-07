@@ -49,7 +49,7 @@ To use a Charter, you need to follow these steps:
 
    > **Warning!** If your chart does not have achromatic patches, result will be incorrect or app can crash.
 
-   ***TODO: Check how code handle the case when WB can't be estimated and optimisation code return the error.***
+   *TODO: Check how code handle the case when WB can't be estimated and optimisation code return the error.*
 
 8. **Color Correction Matrix**
    Click the **Estimate CCM** button to estimate Color Correction Matrix.
