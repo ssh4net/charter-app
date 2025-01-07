@@ -40,8 +40,10 @@ To use a Charter, you need to follow these steps:
    On success, Charter will update image preview and results window with estimated white balance.
 
    > If used **Highlights Scale** settings (enabled by default), Charter will normalize white balance scales to the smallest intensity equal 1.0. And image preview will be updated with reconstructed highlights. Otherwise, image preview will be updated with normalized white balance. Highlights in that case can have unexpected color tint.
-
+   
+   > Highlights reconstruction:
    ![HL reconstruction](https://ssh4net.github.io/charter-app/images/charter_wb_hl_recon.png)
+   ` source -> scaled -> reconstructed highlights`
 
    Some optimisation steps output can be visible in console output.
 
