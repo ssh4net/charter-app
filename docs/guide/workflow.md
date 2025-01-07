@@ -33,8 +33,25 @@ To use a Charter, you need to follow these steps:
 
    > You can always reset the chart to the initial state by clicking the **[x]** button in the chart control.
 
-7. **Estimate White Balance** 
+7. **Estimate White Balance**
+   If your chart have achromatic patches, you can estimate white balance by clicking the **Estimate WB** button.
+   This step is optional, Charter will try to estimate white balance automatically when you click the **Estimate CCM** button.
+
+   On success, Charter will update image preview and results window with estimated white balance.
+
+   > If used **Highlights Scale** settings (enabled by default), Charter will normalize white balance scales to the smallest intensity equal 1.0. And image preview will be updated with reconstructed highlights. Otherwise, image preview will be updated with normalized white balance. Highlights in that case can have unexpected color tint.
+
+   ![HL reconstruction](https://ssh4net.github.io/charter-app/images/charter_wb_hl_recon.png)
+
+   Some optimisation steps output can be visible in console output.
+
+   > **Warning!** If your chart does not have achromatic patches, result will be incorrect or app can crash.
+
+   ***TODO: Check how code handle the case when WB can't be estimated and optimisation code return the error.***
 
 8. **Color Correction Matrix**
+   Click the **Estimate CCM** button to estimate Color Correction Matrix.
+
+   > **Warning!** If your chart does not have achromatic patches, result will be incorrect or app can crash.
 
 9. Check results in **Results** window.
