@@ -7,8 +7,8 @@
 - [White Ballance](#white-ballance)
 - [RAW to XYZ D50](#raw-to-xyz-d50)
 - [Delta-E CIE2000](#delta-e-cie2000)
-- [D50 to D65](#d50-to-d65)
-- [XYZ D50 to sRGB](#xyz-d50-to-srgb)
+- [D50 to D##](#d50-to-d65)
+- [XYZ D50 to target Color Space](#xyz-d50-to-srgb)
 - [RAW to sRGB](#raw-to-srgb)
 - [Print Samples](#print-samples)
 - [Save CSV](#save-csv)
@@ -51,17 +51,16 @@ Show estimated Delta-E CIE2000 error between reference colors and sampled colors
 - **Maximum** maximal Delta-E error from all measured swatches
 - **Minimum** minimal Delta-E error from all measured swatches
 
-### D50 to D65
+### D50 to D##
 
-D50 White Point to D65 White Point chromaticity adaptation matrix (Von Krees). Chromaticity adaptation matrix to provide a proper adaptation between XYZ D50 White Point to XYZ D65 White point.
+D50 White Point to D## White Point chromaticity adaptation matrix (Von Krees). Chromaticity adaptation matrix to provide a proper adaptation between XYZ D50 White Point to XYZ D## White point.
 
-### XYZ D50 to sRGB
-
+### XYZ D## to target Color Space 
 Integrated XYZ D50 to sRGB D65 color transformation matrix.
 
-### RAW to sRGB
+### RAW to Target Color Space RGB
 
-Show estimated, integrated **RAW Color space to sRGB color space** transformation matrix.
+Show estimated, integrated **RAW Color space to target color space** transformation matrix.
 Depend on used **CCM Estimation settings** show:
 - **CCM without WB scales** - RAW to sRGB transformation matrix that can be used after **White Ballance** is applied to convert RAW white-balanced colors to sRGB colors.
 - **CCM with WB scales** - RAW to sRGB transformation matrix that can be used to convert directly RAW colors to sRGB with white balance in a single step.
@@ -101,6 +100,6 @@ Define Max Value for new range **0 - Max_Value**.
 
 **White Ballance** values normalized to have a max value equal to 1.0 and multiplied by a **Max Value** and rounded to the nearest integer in case of using **Integer**
 
-### RAW to sRGB
+### RAW to target Color Space
 
 **RAW to sRGB** matrix values normalized to have a max value equal to 1.0 and multiplied by a **Max Value** and rounded to the nearest integer in case of using **Integer**

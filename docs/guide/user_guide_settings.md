@@ -8,6 +8,12 @@
   - [Load/Save Project](#loadsave-project)
   - [Export LUT](#export-lut)
   - [Export Image](#export-image)
+- [Colour](#colour)
+  - [Gamut](#gamut)
+  - [CCM Estimation](#ccm-estimation)
+  - [Log Decoding](#log-decoding)
+  - [Export Settings](#export-settings)
+  - [CLF Settings](#clf-settings)
 - [Options](#options)
   - [CCM Estimation](#ccm-estimation)
   - [Log Decoding](#log-decoding)
@@ -58,7 +64,18 @@ Export image in linear or sRGB gamma encoding.
 
 End application work.
 
-## Options
+## Colour
+
+### Gamut
+- **sRGB** (default) - sRGB color space. (D65 white point)
+- **AdobeRGB** - Adobe RGB color space. (D65 white point)
+- **ProPhotoRGB** - ProPhoto RGB color space. (D50 white point)
+- **ACES2065-1** - ACES color space (AP0). (D60 white point)
+- **ACEScg** - ACES color space (AP1). (D60 white point)
+- **Rec2020** - Rec.2020 color space. (D65 white point)
+- **DCI-P3** - DCI-P3 color space. (D65 white point)
+- **Filmlight E-Gamut** - Filmlight E-Gamut color space. (D65 white point)
+- **XYZ** - CIE XYZ color space. (D50 white point)
 
 ### CCM Estimation
 
@@ -71,6 +88,21 @@ End application work.
 **S-Log/S-Log2/S-Log3/...** - Used Log decoding curve.
 **Custom** - Log decoding curve - you can use any color space from inclided OCIO config file.
 ***Log Decoding** is not well tesed. Use with caution.*
+
+### Export Settings
+
+Export image and LUT settings.
+
+- **Linear** - Export image in linear gamma (default).
+- **sRGB EOTF** - Export image in sRGB gamma.
+
+### CLF Settings
+
+- **Extended** - Export all color correction steps as CLF nodes:
+RAW to XYZ D50, XYZ D50 to D##, XYZ D## to Color Space. Most flexible and editable mode. (default)
+- **Combined** - Export all color correction steps as a single combined CLF node: RAW to Color Space.
+
+## Options
 
 ### Bayer Pattern
 
@@ -89,12 +121,6 @@ Some CGATK files can have patches sorted by index.
 Use this option to set the most suitable sorting method for your CGATK file or your output target.
 
 ### Image Export Settings
-
-### Export Settings
-
-- **Linear** - Export image in linear gamma.
-- **sRGB EOTF** - Export image in sRGB gamma.
-*At this moment **Charter** limited to sRGB color space as a target. Other color spaces and gamma encodings will be added in the future.*
 
 ### Bit Depth
 
