@@ -32,6 +32,10 @@
 
 [Results](https://ssh4net.github.io/charter-app/guide/user_guide_results#results)
 
+[Digital Camera Profile](https://ssh4net.github.io/charter-app/guide/user_guide_results#digital-camera-profile)
+
+[3D LUT](https://ssh4net.github.io/charter-app/guide/user_guide_results#3d-lut)
+
 [Range Mapping](https://ssh4net.github.io/charter-app/guide/user_guide_results#range-mapping)
 
 [Settings](https://ssh4net.github.io/charter-app/guide/user_guide_settings#settings)
@@ -45,6 +49,7 @@
 - Image control docked window
 - Chart control docked window
 - Results control docked window
+- Digital Camera Profile docked window
 - Range mapping control docked windows (hidden by default)
 
 ## Main Image preview and Chart widget

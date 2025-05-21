@@ -17,6 +17,8 @@ The Charter application's primary purpose is to sample raw color values from ima
 
 #### Key Features
 
+**Color Correction Matrices** (CCM) and White Balance (WB) calculations are performed using double-precision floating-point numbers, ensuring high accuracy. Results have higher precision (lower DeltaE CIE2000 errors) than those obtained popular commercial software or DCamProf.
+
 - **Dynamic Chart Widget**: Users can interactively position the widget over the color chart in the image. The widget supports:
   - Perspective transformation (using corner patches).
   - **Independent** or **elastic** movements for individuals or groups of swatches.
@@ -24,10 +26,13 @@ The Charter application's primary purpose is to sample raw color values from ima
 - **Customizable Sampling**: Control sampling radius and averaging methods (mean or mean + median).
 - **Multi-Image Sampling**: Sampling colors from multiple images as single color chart values.
 - **Data Export**: Export swatches color values, coordinates, and results to other applications or libraries like Colour-Science or SciPy.
-- **Demozaic** raw monochromatic images.
 - **Decoding** sRGB, Gamma, Log encoded images on load.
 - **3D Lut**: bake computed white balance (WB) and color transformation matrix (CCM) into 3D LUT (.cube)
 - **Common LUT format**: export computed white balance (WB) and color transformation matrix (CCM) into *.clf LUT file.
+- **Binary/RAW sensor data**: support for binary/RAW sensor data (e.g., from machine vision cameras) including packed formats like GigE Vision (packed10bit, packed12bit) or TIFF/DNG. 
+- **Camera RAW**: in a RAW read mode can work directly with raw (mozaiced) sensor data. That allows to build Digital Camera profiles (DCP).
+- **Adebe DNG import/export**: support for DNG format using the Adobe DNG SDK.
+- **Digital Camera Profiles**: output DCP files that can be used in various raw processors (e.g., Lightroom, RawTherapee, etc.).
 
 #### Existing Solutions
 
@@ -57,6 +62,7 @@ Initially designed as a companion to Colour-Science, the Charter application emp
 - White balance calculation.
 - Color Correction Matrix computation.
 - Decoding gamma-encoded images (gamma, sRGB, Log).
+- Decoding binary raw sensor data (including packed) and camera RAW formats.
 - Demozaic.
 - Black level subtraction.
 - Exporting results formatted for in NumPy, Matlab, GLSL, CSV, etc.
