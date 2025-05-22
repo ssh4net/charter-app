@@ -10,6 +10,7 @@
 - [Import Settings](#import-image-settings)
   - [Gamma decode](#linear--srgb--gamma--log)
   - [Gamma/Black Lv/Exposure](#import-gamma--exposure--black-lv)
+  - [Illuminant](#illuminant)
 - [Load Image](#load-image)
   - [Add New Tab [+]](#add-new-tab-)
   - [Post Process](#output-image-settings-post-process)
@@ -25,6 +26,7 @@
   - [Method](#median--mean)
 - [Multi Sampling](#multi-sampling)
   - [Method](#min--avg--median)
+- [Estimate Black Level](#estimate-black-level)
 - [Estimate White Ballance](#estimate-wb)
 - [Estimate CCM](#estimate-ccm)
 - [DeltaE](#delta-e)
@@ -45,12 +47,12 @@
 ![GUI](https://ssh4net.github.io/charter-app/images/charter_gui.png)
 
 ## Charter GUI main window has five areas:
-- Main Image preview and Chart widget.
-- Image control docked window
-- Chart control docked window
-- Results control docked window
-- Digital Camera Profile docked window
-- Range mapping control docked windows (hidden by default)
+- Main **Image preview and Chart widget**.
+- **Image** control docked window
+- **Chart* control docked window
+- **Results** control docked window
+- **Digital Camera Profile** docked window
+- **Range** mapping control docked windows (hidden by default)
 
 ## Main Image preview and Chart widget
 
@@ -114,6 +116,14 @@ Import image decoding control in order to apply to a raw image value.
   Working with DSLR or mirrorless RAW data (not the camera raw) that can have 14-bit, you need to use **2-bit shift** or **+2EV Exposure**.
   
   `Decoded_Value * pow(2, exposure)`
+
+### Illuminant
+Settings is used in Digital Camera Profile (DCP) calculation.
+**Custom Illuminant** if selected available those options:
+- **CCT** - Correlated Color Temperature
+- **Δuv** - Delta uv
+
+**Standard Illuminants** - drop-down list of standard illuminants. If selected, the **CCT** and **Δuv** options are disabled.
 
 ## Load Image
 
@@ -205,23 +215,26 @@ Multi-sampling averaging modes:
 - **Avg** - average values of the same swatch from multiple charts
 - **Median** - choose the median value of the same swatch from multiple charts
 
+## Estimate Black Level
+Estimate the black level of the source image. The black level is subtracted from the source image. Often used in RAW processing workflows. Did not estimated on **Estimate CCM** step. (16-bit integer)
+
 ## Estimate WB
 
 Estimate the white balance. First, it tries to find all achromatic color swatches in color chart reference values.
 After that, try to find per-channel scales to minimize the difference between the corrected sampled colors and the ideal achromatic color.
 If successful, the preview will be changed by applying an estimated white balance to a decoded image.
+Optional step. Also estimated on **Estimate CCM** step.
 
 ## Estimate CCM
 
 Estimate **Color Correction Matrix** (CCM) RAW Color RGB to XYZ D50.
 Estimate a CCM by minimization of Delta-E 2000 error between corrected color values and referenced values.
 If successful, the preview will be updated with a color-corrected (wb + ccm) image.
+If no WB was estimated, first, will be estimated WB and then CCM.
 
 ### Delta-E
 
 It should show a window with a per-swatch Delta-E 2000 "heat map."
-
-**WARNING!! I found a bug that might crash the Charter app if this feature is used. Probably only in case you have used "Load Project"**
 
 ![DeltaE](https://ssh4net.github.io/charter-app/images/charter_delta_e.png)
 
