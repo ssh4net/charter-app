@@ -13,7 +13,7 @@
 - [Print Samples](#print-samples)
 - [Save CSV](#save-csv)
 
-[Digital Camera Profiles](#digital-camera-profiles)
+[Digital Camera Profile](#digital-camera-profile)
 
 [Range Mapping](#range-mapping)
 - [Range Max Value](#range-max-value)
@@ -85,7 +85,7 @@ Output CSV file with:
 - **CCM** - estimated CCM matrix.
 - **Coordinates** - coordinates of placed patches on the image (optional).
 
-## Digital Camera Profiles
+## Digital Camera Profile
 ![DCP](https://ssh4net.github.io/charter-app/images/charter_dcp_result.png)
 
 ### White Point

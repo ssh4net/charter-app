@@ -1,6 +1,7 @@
 - [Workflow](https://ssh4net.github.io/charter-app/guide/workflow)
 - [Charter GUI](https://ssh4net.github.io/charter-app/guide/user_guide#charter-gui)
 - [Charter Results](https://ssh4net.github.io/charter-app/guide/user_guide_results#results)
+- [Charter Digital Camera Profile](https://ssh4net.github.io/charter-app/guide/user_guide_results#digital-camera-profile)
 - [Cherter Range Mapping](https://ssh4net.github.io/charter-app/guide/user_guide_results#range-mapping)
 
 ### Menu
