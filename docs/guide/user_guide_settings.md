@@ -6,22 +6,24 @@
 ### Menu
 - File
   - [Load/Save Project](#loadsave-project)
+  - [Recent Files](#recent-files)
   - [Export LUT](#export-lut)
+  - [Bit Depth](#bit-depth)
+  - [Bit Depth](#bit-depth)
+  - [Image Export Settings](#image-export-settings)
   - [Export Image](#export-image)
+  - [Load RAW](#load-raw)
+  - [Export DNG](#export-dng)
+  - [Export DCP](#export-dcp)
 - [Colour](#colour)
   - [Gamut](#gamut)
   - [CCM Estimation](#ccm-estimation)
   - [Log Decoding](#log-decoding)
-  - [Export Settings](#export-settings)
   - [CLF Settings](#clf-settings)
 - [Options](#options)
-  - [CCM Estimation](#ccm-estimation)
-  - [Log Decoding](#log-decoding)
   - [Bayer Pattern](#bayer-pattern)
   - [Demosaic RGB](#demosaic-rgb)
   - [Patch Sorting](#patch-sorting)
-  - [Image Export Settings](#image-export-settings)
-  - [Bit Depth](#bit-depth)
   - [Copy Format](#copy-format)
   - [Save CSV Options](#save-csv-options)
 - [Window](#window)
@@ -37,28 +39,47 @@ Loading Charter project to the current Tab.
 
 Saving Charter project from the current Tab.
 
-**Results:**
-- White Ballance.
-- Color Correction Matrix.
-- Delta-E CIE2000.
-- Delta-E Heat map.
+### Recent Files
 
-**Chart:**
-- Path to used chart CGATK file.
-- Chart and chart swatches placement.
+Load recent files from the list. (Projects, images, charts CGATK files).
 
-**Image:**
-- Path to used image file.
-- Image import settings: gamma, exposure, black level.
-- Image export settings: gamma, exposure, black level.
+### CLF Settings
+
+- **Extended** - Export all color correction steps as CLF nodes:
+RAW to XYZ D50, XYZ D50 to D##, XYZ D## to Color Space. Most flexible and editable mode. (default)
+- **Combined** - Export all color correction steps as a single combined CLF node: RAW to Color Space.
 
 ### Export LUT
 
 Export White Balance and estimated Color Correction Matrix in Common LUT format or bake it as a *.cube 3D LUT file.
 
+### Bit Depth
+
+**8/16 int or 16/32 float** - Export image bit depth. **16 int** is default.
+
+### Export Settings
+
+Export image settings.
+
+- **Linear** - Export image in linear gamma (default).
+- **sRGB EOTF** - Export image in sRGB gamma.
+
 ### Export Image
 
 Export image in linear or sRGB gamma encoding.
+
+## Load RAW
+Load mozaiced RAW image:
+- **BIN/RAW** - Load binary/RAW sensor data.
+- **Camera RAW** - Load camera RAW image (e.g., DNG, CR2, NEF, etc.).
+- **DNG** - Load DNG image. (only mozaiced RAW data)
+
+## Export DNG
+Export **DNG** image with embedded **DCP profile**.
+**Warning**: Embedding only mandatory for DCP profile tests metadata.
+
+## Export DCP
+Export **Digital Camera Profile** (DCP) file. Can be used in various raw processors (e.g., Lightroom, RawTherapee, etc.).
 
 ### Quit
 
@@ -89,19 +110,6 @@ End application work.
 **Custom** - Log decoding curve - you can use any color space from inclided OCIO config file.
 ***Log Decoding** is not well tesed. Use with caution.*
 
-### Export Settings
-
-Export image and LUT settings.
-
-- **Linear** - Export image in linear gamma (default).
-- **sRGB EOTF** - Export image in sRGB gamma.
-
-### CLF Settings
-
-- **Extended** - Export all color correction steps as CLF nodes:
-RAW to XYZ D50, XYZ D50 to D##, XYZ D## to Color Space. Most flexible and editable mode. (default)
-- **Combined** - Export all color correction steps as a single combined CLF node: RAW to Color Space.
-
 ## Options
 
 ### Bayer Pattern
@@ -119,12 +127,6 @@ Usually raw images are monochrome, when some apps can export raw images as RGB. 
 CGATK files usually have swatches sorted by a rows or columns. When Colour-Science library can have a presets for common color charts stored in most intuitive way, when grayscale swatches one after another.
 Some CGATK files can have patches sorted by index.
 Use this option to set the most suitable sorting method for your CGATK file or your output target.
-
-### Image Export Settings
-
-### Bit Depth
-
-**8/16 int or 16/32 float** - Export image bit depth. **16 int** is default.
 
 ### Copy Format
 
@@ -149,3 +151,5 @@ Dockable windows control. Windows can be detached and moved to another screen.
 
 **Console** - Show/Hide console window. Console window is used for debugging and development.
 *At this moment enabled by defailt. Can show additional information about Charter work and results.*
+
+**Log Level** - Set log level. [Off/Debug/Info/Warn/Error/Critical] **Info** is default.
