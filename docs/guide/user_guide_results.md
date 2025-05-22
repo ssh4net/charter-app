@@ -13,6 +13,8 @@
 - [Print Samples](#print-samples)
 - [Save CSV](#save-csv)
 
+[Digital Camera Profiles](#digital-camera-profiles)
+
 [Range Mapping](#range-mapping)
 - [Range Max Value](#range-max-value)
 - [White Ballance](#white-ballance-1)
@@ -82,6 +84,24 @@ Output CSV file with:
 - **Linear RGB** - sampled source colors in linear RGB color space.
 - **CCM** - estimated CCM matrix.
 - **Coordinates** - coordinates of placed patches on the image (optional).
+
+## Digital Camera Profiles
+![DCP](https://ssh4net.github.io/charter-app/images/charter_dcp_result.png)
+
+### White Point
+White point **CIE xy** coordinates of Illuminant.
+
+### Camera Neutral
+DNG/DCP Camera Neutral coordinates.
+
+### Color Matrix
+DNG/DCP **ColorMatrix1**.
+
+### Forward Matrix
+DNG/DCP **ForwardMatrix1**.
+
+### Baseline Exposure
+DNG/DCP baseline exposure. Scale corrected colors to match color chart reference values in destination color space.
 
 ## Range Mapping
 
