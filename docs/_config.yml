@@ -1,2 +1,4 @@
 # docs/_config.yml
-theme: minima
+theme: jekyll-theme-slate
+baseurl: "/charter-app"
+url: "https://ssh4net.github.io"
