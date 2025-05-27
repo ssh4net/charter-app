@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Your page title
+title: Home
 ---
 
 - [Workflow](https://ssh4net.github.io/charter-app/guide/workflow)
