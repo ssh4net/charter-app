@@ -1,3 +1,8 @@
+---
+layout: default
+title: Your page title
+---
+
 - [Workflow](https://ssh4net.github.io/charter-app/guide/workflow)
 - [User Guide](https://ssh4net.github.io/charter-app/guide/user_guide)
   - [GUI](https://ssh4net.github.io/charter-app/guide/user_guide#charter-gui)
